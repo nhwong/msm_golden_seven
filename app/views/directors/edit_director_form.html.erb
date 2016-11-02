@@ -1,0 +1,23 @@
+<table>
+  <form action="/edit_director/<%=@director.id%>">
+    <tr><td>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="<%= @director.name %>">
+    </td></tr>
+    <tr><td>
+      <label for="bio">Bio</label>
+      <input type=text id="bio" name="bio" placeholder="<%= @director.bio %>">
+    </td></tr>
+    <tr><td>
+      <label for="dob">Date Of Birth</label>
+      <input type="text" id="dob" name="dob" placeholder="<%= @director.dob %>">
+    </td></tr>
+    <tr><td>
+      <label for="url">Image URL</label>
+      <input type="text" id="url" name="url" placeholder="<%= @director.image_url %>">
+    </td></tr>
+    <tr><td>
+      <input type="submit" value="Edit Director">
+    </td></tr>
+  </form>
+</table>
