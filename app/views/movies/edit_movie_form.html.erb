@@ -1,0 +1,27 @@
+<table>
+  <form action="/edit_movie/<%=@movie.id%>">
+    <tr><td>
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" placeholder="<%= @movie.title %>">
+    </td></tr>
+    <tr><td>
+      <label for="year">Year</label>
+      <input type=text id="year" name="year" placeholder="<%= @movie.year %>">
+    </td></tr>
+    <tr><td>
+      <label for="duration">Duration</label>
+      <input type="text" id="duration" name="duration" placeholder="<%= @movie.duration %>">
+    </td></tr>
+    <tr><td>
+      <label for="description">Description</label>
+      <input type="text" id="description" name="description" placeholder="<%= @movie.description %>">
+    </td></tr>
+    <tr><td>
+      <label for="url">Image URL</label>
+      <input type="text" id="url" name="url" placeholder="<%= @movie.image_url %>">
+    </td></tr>
+    <tr><td>
+      <input type="submit" value="Edit Movie">
+    </td></tr>
+  </form>
+</table>
