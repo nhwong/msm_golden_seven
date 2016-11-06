@@ -1,0 +1,23 @@
+<table>
+  <form action="/edit_actor/<%=@actor.id%>">
+    <tr><td>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="<%= @actor.name %>">
+    </td></tr>
+    <tr><td>
+      <label for="bio">Bio</label>
+      <input type=text id="bio" name="bio" placeholder="<%= @actor.bio %>">
+    </td></tr>
+    <tr><td>
+      <label for="dob">Date Of Birth</label>
+      <input type="text" id="dob" name="dob" placeholder="<%= @actor.dob %>">
+    </td></tr>
+    <tr><td>
+      <label for="url">Image URL</label>
+      <input type="text" id="url" name="url" placeholder="<%= @actor.image_url %>">
+    </td></tr>
+    <tr><td>
+      <input type="submit" value="Edit Actor">
+    </td></tr>
+  </form>
+</table>
